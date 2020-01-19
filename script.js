@@ -135,7 +135,7 @@ button.on('click', function() {
 		return;
 	}
 
-	if (taskName && taskName.length > 5 && amount) {
+	if (taskName && taskName.length >= 5 && amount) {
 		$('.task-input').removeClass('error-input');
 		$('.amount-input').removeClass('error-input');
 		amount = parseFloat(amount);
